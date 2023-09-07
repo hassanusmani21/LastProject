@@ -1,0 +1,57 @@
+/* CSS for hiding the sidebar */
+.full_container {
+    position: relative;
+  }
+  
+  .sidebar_blog_1,
+  .sidebar_blog_2 {
+    display: none;
+  }
+  
+  .dashboard.active .sidebar_blog_1,
+  .dashboard.active .sidebar_blog_2 {
+    display: block;
+  }
+  
+
+  /* Add transitions for sliding effect */
+.sidebar_blog_1,
+.sidebar_blog_2 {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.dashboard.active .sidebar_blog_1,
+.dashboard.active .sidebar_blog_2 {
+  transform: translateX(0);
+}
+
+/* Positioning */
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+  }
+  
+  .sidebar_blog_1,
+  .sidebar_blog_2 {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+  }
+  
+  .inner_container {
+    margin-left: 250px; /* Adjust the margin based on your sidebar width */
+    width: calc(100% - 250px);
+    padding: 20px;
+    transition: margin 0.3s ease-in-out;
+  }
+  
+  .dashboard.active .inner_container {
+    margin-left: 0;
+  }
+  

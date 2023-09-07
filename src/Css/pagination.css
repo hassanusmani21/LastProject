@@ -1,0 +1,42 @@
+.pageination{
+    display: flex;
+    cursor: pointer;
+}
+
+.pageItem{
+ padding: 8px;
+ border: 2px solid;
+ margin-left: 5px;
+}
+
+.multi-select-list{
+    display: none;
+}
+  
+.field1{
+    display: flex;
+    margin-left: 150px;
+}
+
+.main_bt{
+    margin-top:60px;
+}
+
+.searchBox{
+    display:flex;
+    margin-left: 200px;
+    background-color: rgb(17, 91, 156);
+}
+
+.margin_0 button{
+  margin-top: 10px;
+
+}
+/* .full_container , .center{
+    margin-top: 20px;
+} */
+
+.full-form{
+    margin-top: 70px;
+}
+
