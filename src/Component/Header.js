@@ -6,14 +6,11 @@ import { Link } from 'react-router-dom';
 export function Header(){
 
 const [sidebarVisible, setSidebarVisible] = useState(false);
-  console.log(sidebarVisible)
+  // console.log(sidebarVisible)
     const toggleSidebar = () => {
       setSidebarVisible(!sidebarVisible);
     };
 
-    if(sidebarVisible){
-
-    }
 
   return (
     // Top Bar or Header 

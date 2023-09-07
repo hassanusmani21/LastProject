@@ -17,6 +17,7 @@ export class DataFetchingComponent extends Component {
   componentDidMount() {
     api.get('/contacts')
       .then((response) => {
+        console.log(response)
         this.setState({ data: response.data, loading: false }); 
       })
       .catch((error) => {
