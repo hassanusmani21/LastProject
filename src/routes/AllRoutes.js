@@ -17,6 +17,7 @@ export function AllRoutes() {
         <Route path="/singup" element={<Singup />} />
         <Route path="/dashboard" element={ 
           <ErrorBoundary> <DataFetchingComponent/> </ErrorBoundary>} />
+          
         <Route path="/form" element={<Form />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
